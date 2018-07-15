@@ -2,7 +2,7 @@
 This is a test project, trying to fetch the Firebox T/M series performance data from WatchGuard web site 
 and store it in a CSV file order by 'Firewall Throughput'.
 
-##Solution
+## Solution
 1. Request for appliances-compare page: https://www.watchguard.com/wgrd-products/appliances-compare;
 2. Parse page and get all Firebox T/M series models' code and name;
 3. Combine above url with 3 models' code to get detail page url, ie: https://www.watchguard.com/wgrd-products/appliances-compare/1320/3025/4206;
@@ -18,17 +18,16 @@ and store it in a CSV file order by 'Firewall Throughput'.
 4. Verify result at './result/result.csv'
 
 ## File Manifest
-E:.
-³   readme.md
-³   requirements.txt
-³    
-ÀÄÄÄcodetest
-    ³   main.py
-    ³   __init__.py
-    ³   
-    ÃÄÄÄresult
-    ³       result.csv
-    ³       
-    ÀÄÄÄtests
+Codetest
+│   readme.md
+│   requirements.txt
+│
+└───codetest
+    │   main.py
+    │   __init__.py
+    │
+    ├───result
+    │       result.csv
+    │
+    └───tests
             __init__.py
-            
