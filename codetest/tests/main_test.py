@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import sys
+sys.path.append('../')
 import unittest
-from codetest.main import get_all_model,get_perf,my_sort,write_csv
+from main import get_all_model,get_perf,my_sort,write_csv
 
 
 class TestMain(unittest.TestCase):
