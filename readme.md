@@ -14,20 +14,22 @@ and store it in a CSV file order by 'Firewall Throughput'.
 ## Instructions for run
 1. Runtime: Python 3.6
 2. Ensure all third-party libraries mentioned in requirements.txt have been installed
-3. Go to path '$ProjectPath/codetest', and run command 'python main.py'
+3. Go to path '%ProjectPath%/codetest', and run command 'python main.py'
 4. Verify result at './result/result.csv'
+5. Go to path '%ProjectPath%/codetest/tests', and run unit test by 'python -m unittest mydict_test'
 
 ## File Manifest
-Codetest
-│   readme.md
-│   requirements.txt
-│
-└───codetest
-    │   main.py
-    │   __init__.py
-    │
-    ├───result
-    │       result.csv
-    │
-    └───tests
-            __init__.py
+Codetest:   
+│&nbsp;&nbsp;readme.md   
+│&nbsp;&nbsp;requirements.txt   
+│       
+└───codetest    
+ &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;main.py    
+ &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;__init__.py   
+ &nbsp;&nbsp;&nbsp;&nbsp;│   
+ &nbsp;&nbsp;&nbsp;&nbsp;├───result   
+ &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result.csv   
+ &nbsp;&nbsp;&nbsp;&nbsp;│   
+ &nbsp;&nbsp;&nbsp;&nbsp;└───tests  
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main_test.py   
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__init__.py   
