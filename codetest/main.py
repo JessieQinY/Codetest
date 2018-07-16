@@ -21,7 +21,7 @@ def get_all_model():
     m_series = tree.xpath('//select[@id="p1"]/optgroup[contains(@label,"M Series")]/option')
     t_series = tree.xpath('//select[@id="p1"]/optgroup[contains(@label,"T Series")]/option')
     all_model = m_series + t_series
-    model_list = [[mod.get('value'),mod.text] for mod in all_model]
+    model_list = [[mod.get('value'), mod.text] for mod in all_model]
     return model_list
 
 
@@ -29,11 +29,11 @@ def get_perf(model_list):
     """Return all models performance data as a two-dimensional list"""
     for i in range(0, len(model_list), 3):
         appd_url = u'/%s/%s/%s' \
-                   % (model_list[i][0],model_list[i+1][0],model_list[i+2][0])
+                   % (model_list[i][0], model_list[i+1][0], model_list[i+2][0])
         print('requesting compare detail page for %s...' % appd_url)
         page = requests.get(baseurl + appd_url).text
         tree = html.etree.HTML(page)
-        for (model,index) in zip(model_list[i:i+3],range(2,5)):
+        for (model, index) in zip(model_list[i:i+3], range(2, 5)):
             xpath1 = '//div/table//tr/td[%d]' % index
             pf = tree.xpath(xpath1)
             model += [p.text for p in pf[8:14]]
