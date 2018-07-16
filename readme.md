@@ -16,7 +16,7 @@ and store it in a CSV file order by 'Firewall Throughput'.
 2. Ensure all third-party libraries mentioned in requirements.txt have been installed
 3. Go to path '%ProjectPath%/codetest', and run command 'python main.py'
 4. Verify result at './result/result.csv'
-5. Go to path '%ProjectPath%/codetest/tests', and run unit test by 'python -m unittest mydict_test'
+5. Go to path '%ProjectPath%/codetest/tests', and run unit test by 'python main_test.py'
 
 ## File Manifest
 Codetest:   
